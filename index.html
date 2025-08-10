@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK TO MONTSERRAT FONT GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--LINK TO MY CSS-->
+    <link rel="stylesheet" href="mystyles.css">
+    <title>Tic Tac Toe!</title>
+</head>
+<body>
+    <div class="prelude">
+        <u>Tic-Tac-Toe!</u>
+    </div>
+    <div class="welcome" id="welcomeArea">
+        <p class="welcomeText"><u>Welcome to my Tic-Tac-Toe website! This project was made<br>
+        by Elisha N. (HolaSenorPython on GitHub). I made this using<br>raw HTML, CSS, and JS.
+        My goal with this project is to further<br>improve my coding skils, specifically getting better 
+        at HTML, CSS, and JS.</u></p>
+    </div>
+    <div class="prompt" id="readyOrNot">
+        <p class="promptText">Choose an AI difficulty to get started.</p>
+        <button class="buttons button1" id="easyBtn"><u>Easy</u></button>
+        <button class="buttons button2" id="mediumBtn"><u>Medium</u></button>
+        <button class="buttons button3" id="hardBtn"><u>Hard</u></button>
+    </div>
+    <div class="gameboard" id="gameboardArea">
+        <div class="clickable tile0" data-tile="0"></div>
+        <div class="clickable tile1" data-tile="1"></div>
+        <div class="clickable tile2" data-tile="2"></div>
+        <div class="clickable tile3" data-tile="3"></div>
+        <div class="clickable tile4" data-tile="4"></div>
+        <div class="clickable tile5" data-tile="5"></div>
+        <div class="clickable tile6" data-tile="6"></div>
+        <div class="clickable tile7" data-tile="7"></div>
+        <div class="clickable tile8" data-tile="8"></div>
+    </div>
+    <div class="whos-turn" id="whosTurn">
+
+    </div>
+<!--HIDDEN AUDIOS :O-->
+<audio src="audio/penelope.mp3" id="penelopeCharmosa"></audio>
+<audio src="audio/windows-error.mp3" id="error"></audio>
+<audio src="audio/yay.mp3" id="yaySound"></audio>
+<audio src="audio/anime-wow.mp3" id="animeWow"></audio>
+<audio src="audio/boring.mp3" id="boringSound"></audio>
+<!--LINK TO MY TIC TAC TOE SCRIPT/JS (MODULE TYPE SO I CAN IMPORT FUNC FROM OTHER FILES)-->
+<script type="module" src="tic-tac-toe.js"></script>
+</body>
+</html>

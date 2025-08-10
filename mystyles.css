@@ -1,0 +1,239 @@
+/* This file contains all the CSS necessary for my tic tac toe project!! */
+
+/*
+ BODY STYLING AND KEYFRAMES!! 
+*/
+body {
+    background-color: red;
+    animation-name: rainbow; /* Do my rainbow gradient animation func */
+    animation-duration: 7s; /* And do it in 7 seconds for every color of the rainbow */
+    animation-iteration-count: infinite; /* Do this animation forever! */
+    animation-timing-function: linear; /* Keep same speed throughout! */
+}
+
+@keyframes rainbow {
+    0% {background-color: red;}
+    16.6% {background-color: orange;}
+    33.2% {background-color: yellow;}
+    49.8% {background-color: green;}
+    66.4% {background-color: blue;}
+    83% {background-color: purple;}
+    100% {background-color: pink;}
+}
+
+/*
+ DIV STYLING AND OTHER STUFFS
+*/
+
+/* All styling for the prelude class (the first div up top) */
+.prelude {
+    color: white; /* Text color */
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 25%;
+    margin: auto;
+}
+
+/* All styling for the welcome class (the second div in the center) */
+.welcome {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    border-radius: 16px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    margin-bottom: 8%;
+}
+
+.welcomeText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: white;
+}
+
+/* Styling for the gamemode prompting down below */
+.prompt {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.promptText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 200px;
+    height: 150px;
+    border-radius: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 36px;
+    border: 2px solid white;
+    margin-bottom: 5px;
+    transition-duration: 0.3s;
+}
+
+.button1 {
+    background-color: limegreen;
+    color: black;
+}
+
+.button1:hover {
+    background-color: green;
+    color: white;
+}
+
+.button2 {
+    background-color: gold;
+    color: black;
+}
+
+.button2:hover {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+.button3 {
+    background-color: red;
+    color: black;
+}
+
+.button3:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/*
+ STYLING FOR ACTUAL BOARD AND STUFF
+*/
+.gameboard {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    margin-top: 4vh;
+}
+
+/* Style for tile 0 and the rest below... */
+.gameboard > .tile0 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    padding: 50px;
+}
+
+.gameboard > .tile1 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    padding: 50px;
+}
+
+.gameboard > .tile2 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    padding: 50px;
+}
+
+.gameboard > .tile3 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    padding: 50px;
+}
+
+.gameboard > .tile4 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    padding: 50px;
+}
+
+.gameboard > .tile5 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    padding: 50px;
+}
+
+.gameboard > .tile6 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    border-right: 5px solid black;
+    padding: 50px;
+}
+
+.gameboard > .tile7 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    padding: 50px;
+}
+
+.gameboard > .tile8 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    border-left: 5px solid black;
+    padding: 50px;
+}
+
+.whos-turn {
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 32px;
+    border-radius: 16px;
+}
