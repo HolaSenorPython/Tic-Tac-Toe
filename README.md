@@ -2,7 +2,7 @@
 
 This project is the classical tic-tac-toe game, complete with human and AI player options. Meant for me
 to grow in raw HTML, CSS, and JS development, and for any players to enjoy. 
-
+Live with GitHub pages here: https://holasenorpython.github.io/Tic-Tac-Toe/
 ---
 
 ## Notes and Features📃
